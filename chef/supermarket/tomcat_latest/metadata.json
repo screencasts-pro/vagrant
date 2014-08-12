@@ -1,0 +1,36 @@
+{
+  "name": "tomcat_latest",
+  "description": "Installs and Configures latest Apache Tomcat 6 or 7",
+  "long_description": "Description\n===========\n\nInstalls and configures latest Apache Tomcat version 6 or 7 or specified version",
+  "maintainer": "Chendil Kumar Manoharan",
+  "maintainer_email": "mkchendil@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "suse": ">= 0.0.0",
+	"centos": ">=0.0.0",
+	"fedora": ">=0.0.0",
+	"ubuntu": ">=0.0.0",
+	"debian": ">=0.0.0"
+  },
+  "dependencies": {
+    "java": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "tomcat::default": "Installs and Configures latest Apache Tomcat 6 or 7 or specified version"
+  },
+  "version": "0.1.6"
+}

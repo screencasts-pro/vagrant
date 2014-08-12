@@ -1,0 +1,12 @@
+#!/bin/sh
+export JAVA_OPTS=<%= node["tomcat_latest"]["java_options"] %>
+case "$1" in
+start)
+  <%= node["tomcat_latest"]["tomcat_install_loc"] %>/tomcat6/apache-tomcat-6/bin/startup.sh
+;;
+stop)
+  <%= node["tomcat_latest"]["tomcat_install_loc"] %>/tomcat6/apache-tomcat-6/bin/shutdown.sh
+;;
+*)
+  echo "Syntax: $0 <start|stop>"
+esac
