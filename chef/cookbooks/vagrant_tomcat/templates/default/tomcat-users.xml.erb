@@ -1,0 +1,9 @@
+<!-- Tomcat Configuration for Manager UI and script access -->
+<tomcat-users>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-status"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <user username="tomcat" password="tomcat" roles="manager-gui,manager-status"/>
+  <user username="vagrant" password="vagrant" roles="manager-script,manager-jmx"/>
+</tomcat-users>
